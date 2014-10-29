@@ -12,4 +12,6 @@ RUN apt-get install -y libssl-dev
 ADD https://raw.github.com/pypa/pip/master/contrib/get-pip.py /tmp/get-pip.py
 RUN cat /tmp/get-pip.py | python3
 
+RUN apt-get -y install git
+
 CMD [ "/bin/bash" ]
